@@ -4,5 +4,5 @@
 **Course:** LIS6371  
 **Description:** Repository for R Programming Assignments
 
-## Github Repository: https://github.com/premitha27
+## Github Repository: https://github.com/premitha27/r-programming-assignments
 ## Blog Link: https://premithapagadala.blogspot.com/ 
