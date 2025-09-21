@@ -10,8 +10,8 @@ df_hosp <- data.frame(
   SecondAssess, FinalDecision, stringsAsFactors = FALSE
 )
 # Inspect and handle NA:
-summary(df_hosp)
 df_hosp <- na.omit(df_hosp)
+summary(df_hosp)
 # Boxplot: Blood Pressure by First MD Assessment
 boxplot(
   BloodPressure ~ FirstAssess,
