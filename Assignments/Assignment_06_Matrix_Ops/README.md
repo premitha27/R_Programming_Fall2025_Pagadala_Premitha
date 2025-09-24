@@ -1,6 +1,6 @@
 # Assignment #6: Matrix Operations and Construction
 
-**Blog Link:** [Assignment 5 Blog Post]()
+**Blog Link:** [Assignment 6 Blog Post]()
 
 
 ## Description
