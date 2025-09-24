@@ -1,5 +1,8 @@
 # Assignment #6: Matrix Operations and Construction
 
+**Blog Link:** [Assignment 5 Blog Post]()
+
+
 ## Description
 This assignment demonstrates fundamental matrix operations in R, including addition, subtraction, and construction of diagonal and custom block-structured matrices. The tasks focus on:  
 
