@@ -9,7 +9,6 @@ This assignment demonstrates fundamental matrix operations in R, including addit
 - Performing basic matrix arithmetic (addition and subtraction)  
 - Creating diagonal matrices using `diag()`  
 - Constructing a custom 5×5 block-structured matrix programmatically  
-- Documenting code and results clearly for reproducibility  
 
 ## How to Run
 1. Open the script file `Assignment_06.R` in RStudio.  
