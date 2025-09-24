@@ -1,6 +1,6 @@
 ## Assignment #5: Matrix Algebra in R  
 
-**Blog Link:** [Assignment 6 Blog Post](https://premithapagadala.blogspot.com/2025/09/assignment-6_23.html)
+**Blog Link:** [Assignment 5 Blog Post](https://premithapagadala.blogspot.com/2025/09/assignment-6.html)
 
 ### Description
 This assignment focuses on matrix algebra in R. The main goals are:
