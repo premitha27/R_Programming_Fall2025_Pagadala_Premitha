@@ -2,7 +2,6 @@
 
 **Blog Link:** [Assignment 6 Blog Post](https://premithapagadala.blogspot.com/2025/09/assignment-6.html)
 
-
 ## Description
 This assignment demonstrates fundamental matrix operations in R, including addition, subtraction, and construction of diagonal and custom block-structured matrices. The tasks focus on:  
 
