@@ -1,4 +1,4 @@
-# Assignment #6: Matrix Operations and Construction
+# Assignment 6: Matrix Operations and Construction
 
 **Blog Link:** [Assignment 6 Blog Post]()
 
@@ -21,3 +21,10 @@ This assignment demonstrates fundamental matrix operations in R, including addit
 
 ## Data
 - No external datasets are required; matrices are defined directly in the script.
+
+## Notes
+- Matrix Arithmetic: A + B and A - B perform element-wise addition and subtraction; both matrices must have the same dimensions.
+- Diagonal Matrix: diag(c(4,1,2,3)) creates a 4×4 matrix with the specified values on the diagonal and zeros elsewhere.
+- Custom Matrix Construction: The 5×5 matrix is built using diag() and cbind()/rbind() to combine the diagonal with repeated values for a block-structured layout.
+- Reproducibility: All matrices are defined in the script; no external data is needed.
+- Learning Outcome: Helps understand indexing, matrix arithmetic, and programmatic matrix construction in R.
