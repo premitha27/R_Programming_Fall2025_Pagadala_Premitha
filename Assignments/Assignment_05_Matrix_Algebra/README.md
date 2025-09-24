@@ -14,7 +14,7 @@ This helps strengthen understanding of linear algebra in R and introduces error 
 ### How to Run
 1. Install and load any required packages (none required for this assignment — base R is sufficient).  
 2. Open RStudio or R console.  
-3. Load the provided script (`assignment5.R`) from the repository.  
+3. Load the provided script (`Assignment_05.R`) from the repository.  
 4. Run the script to see outputs in the console. 
 
 ## Packages
