@@ -1,6 +1,6 @@
 # Assignment 7: Exploring R’s Object-Oriented Systems (S3 & S4)
 
-**Blog Link:** [Assignment 7 Blog Post](https://premithapagadala.blogspot.com/2025/09/assignment-7.html)
+**Blog Link:** [Assignment 7 Blog Post](https://premithapagadala.blogspot.com/2025/10/assignment-7.html)
 
 ## Description
 This assignment explores R’s two main object-oriented programming (OOP) systems — **S3** and **S4**.  
