@@ -1,6 +1,6 @@
 # Assignment #8: Input/Output, String Manipulation, and the plyr Package
 
-**Blog Link:** [Assignment 7 Blog Post](https://premithapagadala.blogspot.com/2025/10/assignment-7.html)
+**Blog Link:** [Assignment 8 Blog Post](https://premithapagadala.blogspot.com/2025/10/assignment-8.html)
 
 ## Description
 This assignment demonstrates how to perform **data input/output operations**, **grouped summarization**, and **string filtering** in R using the **plyr** package.  
