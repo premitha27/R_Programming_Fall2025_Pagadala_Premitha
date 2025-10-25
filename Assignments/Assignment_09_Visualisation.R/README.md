@@ -1,6 +1,6 @@
 # Assignment 9: Visualization in R – Base Graphics, Lattice, and ggplot2
 
-**Blog Link:** [Assignment 9 Blog Post](hhttps://premithapagadala.blogspot.com/2025/10/assignment-9.html)
+**Blog Link:** [Assignment 9 Blog Post](https://premithapagadala.blogspot.com/2025/10/assignment-9.html)
 
 ## Description
 This assignment demonstrates three major R visualization systems: **Base graphics**, **Lattice**, and **ggplot2**.  
