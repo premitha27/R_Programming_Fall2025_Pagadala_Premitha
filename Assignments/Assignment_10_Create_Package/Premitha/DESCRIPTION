@@ -1,0 +1,27 @@
+
+Package: Premitha
+Title: Simple Tools for Streamlined Data Analysis
+Version: 0.0.0.9000
+Authors@R: 
+    person("Premitha", "Pagadala", 
+           email = "premithapagadala@gmail.com", 
+           role = c("aut", "cre"))
+Description: 
+    The Premitha package provides simple, easy-to-use helper functions 
+    that make common data analysis tasks faster and more efficient. 
+    It is designed for students, researchers, and analysts who want 
+    to perform exploratory data analysis and visualization quickly 
+    without repetitive coding.
+Depends: R (>= 3.1.2)
+Imports: 
+    ggplot2,
+    dplyr
+License: CC0
+LazyData: true
+URL: https://github.com/premitha27/R_Programming_Fall2025_Pagadala_Premitha
+BugReports: https://github.com/premitha27/R_Programming_Fall2025_Pagadala_Premitha/issues
+Suggests: knitr, rmarkdown
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+
