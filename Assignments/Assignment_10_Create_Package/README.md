@@ -1,36 +1,54 @@
 # Assignment 9: Visualization in R – Base Graphics, Lattice, and ggplot2
 
-**Blog Link:** [Assignment 9 Blog Post](https://premithapagadala.blogspot.com/2025/10/assignment-9.html)
+**Blog Link:** [Assignment 10 Blog Post](hhttps://premithapagadala.blogspot.com/2025/11/assignment-10.html)
 
 ## Description
-This assignment demonstrates three major R visualization systems: **Base graphics**, **Lattice**, and **ggplot2**.  
-Using the **Breast Cancer Wisconsin Diagnostic (brca)** dataset from the `dslabs` package, we explore how tumor diagnosis (Benign vs Malignant) relates to numeric features such as `radius_mean` and `texture_mean`.  
-The objective is to compare syntax, workflow, and visual clarity across these systems.
+The **Premitha** R package is designed to simplify common data analysis and visualization tasks.  
+It provides lightweight functions to quickly explore numeric datasets, generate summary statistics, and create visualizations without writing repetitive code.  
+This assignment demonstrates R package creation, documentation, and testing using a custom function `quick_summary_plot()`.
+
 
 ## How to Run
-1. Open **RStudio** and set your working directory.
-2. Install required packages (if not already installed)
-install.packages(c("dslabs", "lattice", "ggplot2"))
-3. Load the dataset and packages
-4. Run the script `Assignment_09.R` to generate all plots:
-   - Base R scatter plots, histograms, boxplots
-   - Lattice scatter, density, and boxplots
-   - ggplot2 scatter plots, histograms, faceted plots
-5. Plots are displayed in the **Plots** pane; optional export to files can be added.
+1. **Install required tools** (once):
+```r
+install.packages(c("devtools", "roxygen2"))
+library(devtools)
+library(roxygen2)
+```
+2. **Clone or set working directory** to your package folder:
+```r
+setwd("/path/to/Assignment_10/Premitha")
+```
+3. **Build and document the package**:
+```r
+document()  # Generates documentation and NAMESPACE
+check()     # Validates the package
+build()     # Creates installable .tar.gz
+```
+4. **Install from GitHub** (after pushing the package):
+```r
+devtools::install_github("premitha-pagadala/Premitha")
+```
+5. **Load the package and test function**:
+```r
+library(Premitha)
+quick_summary_plot(mtcars, mpg)
+```
+This prints summary statistics for `mpg` and displays a histogram.
 
 ## Packages
-- **dslabs** — for the `brca` dataset  
-- **lattice** — formula-based visualization system  
-- **ggplot2** — Grammar-of-Graphics system for layered plots  
+- **devtools** — for building and installing packages  
+- **roxygen2** — for documentation and NAMESPACE generation  
+- **ggplot2** — plotting histograms  
+- **dplyr** — data manipulation (pulling variables)  
 
 ## Data
-- **Source:** `dslabs` package (`brca`)  
-- **Description:** 569 tumor samples; 30 numeric predictors (`brca$x`) and one categorical diagnosis variable (`brca$y`) with levels "B" (Benign) and "M" (Malignant)  
-- **Location:** Loaded directly from the package in R  
+- **Source:** Any user-supplied data frame  
+- **Example:** `mtcars` used for demonstration  
+- **Location:** Loaded directly in R; no external files required  
 
 ## Notes
-- **Base Graphics:** Quick and flexible for exploratory plots but limited in multi-panel layouts and styling.  
-- **Lattice:** Excellent for conditioned plots and paneling; handles grouped data elegantly.  
-- **ggplot2:** Highly flexible, professional-looking, layered plots; supports faceting and themes for publication-quality visualizations.  
-- **Comparison:** ggplot2 provides the best combination of clarity, customization, and minimal code for complex visualizations.  
-- **Learning Outcome:** Understanding differences in syntax, workflow, and aesthetics between Base, Lattice, and ggplot2 systems.  
+- **quick_summary_plot():** Summarizes a numeric variable and displays a histogram.  
+- **R Package Essentials:** Includes proper `DESCRIPTION` metadata, `R/` folder for functions, and roxygen2 documentation.  
+- **Reproducibility:** No external data required; package works on any numeric dataset in a data frame.  
+- **Learning Outcome:** Demonstrates package structure, documentation, function export, and basic EDA automation in R.  
