@@ -1,6 +1,6 @@
 # Assignment 10: Building Your Own R Package – Premitha
 
-**Blog Link:** [Assignment 10 Blog Post](hhttps://premithapagadala.blogspot.com/2025/11/assignment-10.html)
+**Blog Link:** [Assignment 10 Blog Post](https://premithapagadala.blogspot.com/2025/11/assignment-10.html)
 
 ## Description
 The **Premitha** R package is designed to simplify common data analysis and visualization tasks.  
