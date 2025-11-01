@@ -1,4 +1,4 @@
-# Assignment 9: Visualization in R – Base Graphics, Lattice, and ggplot2
+# Assignment 10: Building Your Own R Package – Premitha
 
 **Blog Link:** [Assignment 10 Blog Post](hhttps://premithapagadala.blogspot.com/2025/11/assignment-10.html)
 
