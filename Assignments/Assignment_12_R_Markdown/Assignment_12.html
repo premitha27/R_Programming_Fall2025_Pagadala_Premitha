@@ -254,7 +254,56 @@ if (window.hljs) {
 
 
 
-<link rel="stylesheet" href="styles.css" type="text/css" />
+<style type="text/css">
+body {
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 16px;
+line-height: 1.6;
+color: #333333;
+background-color: #fdfdfd;
+margin: 20px;
+}
+
+h1 {
+font-family: "Georgia", serif;
+font-size: 32px;
+color: #2E86C1;
+border-bottom: 2px solid #2E86C1;
+padding-bottom: 5px;
+}
+h2 {
+font-family: "Georgia", serif;
+font-size: 26px;
+color: #2874A6;
+margin-top: 25px;
+}
+h3 {
+font-family: "Georgia", serif;
+font-size: 22px;
+color: #1B4F72;
+}
+
+p {
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 16px;
+color: #333333;
+}
+
+code {
+font-family: "Courier New", Courier, monospace;
+background-color: #F2F2F2;
+padding: 2px 4px;
+border-radius: 3px;
+}
+
+pre {
+background-color: #F8F8F8;
+padding: 10px;
+border-left: 4px solid #2E86C1;
+overflow-x: auto;
+font-family: "Courier New", Courier, monospace;
+font-size: 14px;
+}</style>
 
 
 
@@ -400,11 +449,8 @@ if (!requireNamespace(&quot;BiocManager&quot;, quietly = TRUE))
   install.packages(&quot;BiocManager&quot;)
 BiocManager::install(&quot;DESeq2&quot;)</code></pre>
 <pre><code>## Bioconductor version 3.21 (BiocManager 1.30.26), R 4.5.1 (2025-06-13)</code></pre>
-<pre><code>## Installing package(s) &#39;DESeq2&#39;</code></pre>
-<pre><code>## also installing the dependencies &#39;formatR&#39;, &#39;lambda.r&#39;, &#39;futile.options&#39;, &#39;futile.logger&#39;, &#39;snow&#39;, &#39;BH&#39;, &#39;BiocParallel&#39;, &#39;locfit&#39;, &#39;RcppArmadillo&#39;</code></pre>
-<pre><code>## 
-## The downloaded binary packages are in
-##  /var/folders/xg/yvqd07dx7yn7y93s4qqkwmrc0000gn/T//Rtmp4r94Vo/downloaded_packages</code></pre>
+<pre><code>## Warning: package(s) not installed when version(s) same as or greater than current; use
+##   `force = TRUE` to re-install: &#39;DESeq2&#39;</code></pre>
 <pre><code>## Old packages: &#39;mgcv&#39;, &#39;pkgdown&#39;, &#39;purrr&#39;, &#39;stringr&#39;</code></pre>
 <pre class="r"><code># Load necessary libraries
 BiocManager::install(&quot;airway&quot;, update = FALSE, ask3 = FALSE)</code></pre>
