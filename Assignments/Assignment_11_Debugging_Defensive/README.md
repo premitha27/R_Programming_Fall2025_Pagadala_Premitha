@@ -1,4 +1,4 @@
-# Assignment 10: Building Your Own R Package – Premitha
+# Assignment 11: Debugging Turkey Outlier Function in R
 
 **Blog Link:** [Assignment 11 Blog Post](https://premithapagadala.blogspot.com/2025/11/assignment-11.html)
 
