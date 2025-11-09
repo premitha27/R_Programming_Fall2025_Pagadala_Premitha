@@ -2,8 +2,6 @@
 
 **Blog Link:** [Assignment 12 Blog Post](https://premithapagadala.blogspot.com/2025/11/assignment-12.html)
 
-**HTML OUPUT**: file:///Users/premithapagadala/Documents/R_Programming_Fall2025_Pagadala_Premitha/Assignments/Assignment_12_R_Markdown/Assignment_12.html
-
 ## Description
 This assignment demonstrates the use of **R Markdown** to create reproducible reports integrating **narrative text**, **code**, and **output**. The workflow focuses on bioinformatics data analysis using **RNA-Seq datasets** from Bioconductor.
 The key objectives were:
