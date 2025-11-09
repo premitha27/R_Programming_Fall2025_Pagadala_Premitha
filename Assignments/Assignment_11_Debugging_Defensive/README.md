@@ -13,7 +13,7 @@ The assignment demonstrates identifying errors, fixing logical bugs, adding defe
 3. The console will display the original error message from the buggy function, the test matrix data and the corrected output using the corrected_tukey() function.
 
 ## Packages
-- **Base R** — all core functionality for matrix manipulation and logical operations
+- **Base R** 
 
 ## Data
 - **Source:** Randomly generated numeric matrix using rnorm() or any user-supplied numeric matrix  
