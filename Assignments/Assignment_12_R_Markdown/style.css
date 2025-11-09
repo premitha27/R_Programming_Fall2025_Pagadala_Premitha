@@ -1,0 +1,56 @@
+/* Body text */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #fdfdfd;
+  margin: 20px;
+}
+
+/* Headings */
+h1 {
+  font-family: "Georgia", serif;
+  font-size: 32px;
+  color: #2E86C1;
+  border-bottom: 2px solid #2E86C1;
+  padding-bottom: 5px;
+}
+
+h2 {
+  font-family: "Georgia", serif;
+  font-size: 26px;
+  color: #2874A6;
+  margin-top: 25px;
+}
+
+h3 {
+  font-family: "Georgia", serif;
+  font-size: 22px;
+  color: #1B4F72;
+}
+
+/* Paragraph text */
+p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+
+/* Inline code */
+code {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #F2F2F2;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* Code chunks */
+pre {
+  background-color: #F8F8F8;
+  padding: 10px;
+  border-left: 4px solid #2E86C1;
+  overflow-x: auto;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+}
