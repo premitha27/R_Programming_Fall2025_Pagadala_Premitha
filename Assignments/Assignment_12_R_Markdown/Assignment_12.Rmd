@@ -1,0 +1,93 @@
+---
+title: "My R Markdown Primer"
+author: "Premitha"
+date: "2025-11-09"
+output: html_document
+---
+
+## R Markdown
+
+# Introduction
+
+R Markdown is a powerful tool for combining narrative text, code, and output in a single document. It allows analysts and researchers to create **reproducible reports**, where the analysis can be rerun with fresh data and results automatically updated.
+In bioinformatics, this is especially useful for analyzing **gene expression data**, as we can document our workflow and update results automatically.
+For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+# Narrative Section
+
+RNA-Seq experiments generate massive amounts of data representing **gene expression levels** across samples.  
+Bioinformaticians often need to summarize, visualize, and statistically test this data to find **differentially expressed genes**.  
+
+# LaTeX Math Examples
+
+Bioinformatics often uses **mathematical models** to describe biological processes. For example, a common equation in genetics is **Hardy-Weinberg equilibrium**:
+Inline: $p^2 + 2pq + q^2 = 1$
+
+Displayed:
+
+$$
+p^2 + 2pq + q^2 = 1
+$$
+
+Where:
+
+- $p$ = frequency of allele A  
+- $q$ = frequency of allele a  
+
+# Load Libraries and Data
+# Install Bioconductor if needed
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+
+# Load necessary libraries
+BiocManager::install("airway", update = FALSE, ask = FALSE)
+library(airway)
+library(DESeq2)
+library(ggplot2)
+library(tidyverse)
+
+# Load the airway dataset
+data("airway")
+airway
+
+# Explore the Dataset
+# Convert to a DESeq2 object
+dds <- DESeqDataSet(airway, design = ~ cell + dex)
+# Check counts for the first 6 genes
+head(counts(dds))
+
+# Simple Analysis: Normalization
+# Normalize counts using DESeq2's variance stabilizing transformation (VST)
+vsd <- vst(dds, blind = FALSE)
+
+# Summary statistics for a few genes
+assay(vsd)[1:6,]
+
+# Visualization: PCA Plot
+# Principal Component Analysis (PCA) to visualize samples
+pca <- prcomp(t(assay(vsd)))
+pca_data <- as.data.frame(pca$x)
+pca_data$Sample <- colnames(vsd)
+pca_data$Treatment <- colData(vsd)$dex
+ggplot(pca_data, aes(PC1, PC2, color = Treatment, label = Sample)) +
+geom_point(size = 4) +
+geom_text(vjust = -0.5) +
+theme_minimal() +
+labs(title = "PCA of RNA-Seq Samples")
+
+# Reflection
+Using R Markdown with bioinformatics datasets like RNA-Seq offers clear advantages:
+
+- Reproducibility: All analysis steps are documented in one file.
+- Integration of text, math, and code: Results are automatically linked with interpretations.
+- Visualization: PCA plots and other figures are embedded directly.
+- Workflow tracking: Easy to revisit and update analyses.
+
+Compared to static reports, this approach reduces errors, improves clarity, and facilitates collaboration.
+
+# Conclusion
+This primer demonstrated:
+- Loading a real RNA-Seq dataset from Bioconductor.
+- Performing basic normalization and exploratory analysis.
+- Visualizing gene expression patterns using PCA.
+- Documenting a complete bioinformatics workflow in R Markdown.
