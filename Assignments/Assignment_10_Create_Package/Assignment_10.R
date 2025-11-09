@@ -84,4 +84,3 @@ build()     # Creates .tar.gz file (installable package)
 # Step 6: Test your function
 library(Premitha)
 quick_summary_plot(mtcars, mpg)
-
