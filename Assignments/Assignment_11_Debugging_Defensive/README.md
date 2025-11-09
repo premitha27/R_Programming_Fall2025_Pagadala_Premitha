@@ -20,7 +20,8 @@ The assignment demonstrates identifying errors, fixing logical bugs, adding defe
 - **Example:** test_mat 10 × 5 matrix
 
 ## Notes
-- **quick_summary_plot():** Summarizes a numeric variable and displays a histogram.  
-- **R Package Essentials:** Includes proper `DESCRIPTION` metadata, `R/` folder for functions, and roxygen2 documentation.  
-- **Reproducibility:** No external data required; package works on any numeric dataset in a data frame.  
-- **Learning Outcome:** Demonstrates package structure, documentation, function export, and basic EDA automation in R.  
+- **corrected_tukey()**: Identifies rows where all elements are outliers according to the Tukey rule.
+- **Bug Fix**: Replaced && (scalar logical AND) with & (element-wise logical AND) to fix the error.
+- **Defensive Checks**: Ensures the input is a numeric matrix; provides informative errors for invalid input.
+- **Debugging Workflow**: Includes reproducing the error, diagnosing the bug, correcting the function, validating outputs, and documenting results.
+- **Output**: Returns a logical vector of length equal to the number of rows in the input matrix.
